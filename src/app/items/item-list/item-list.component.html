@@ -1,0 +1,58 @@
+<!--Section heading-->
+<h2 class="h1 font-weight-bold text h1">Our bestsellers</h2>
+<!--Section description-->
+<p class="dark-grey-text pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam
+  iure
+  provident voluptate esse quasi,
+  veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
+<!--Grid row-->
+<div class="row" >
+  <!-- Grid column -->
+  <div class="col-lg-3 col-md-4 col-sm-4 mb-lg-0 mb-4" *ngFor="let item of items" [routerLink]="['/item', item.id]">
+    <!-- Card -->
+    <div class="card card-cascade wider card-ecommerce" mdbWavesEffect>
+      <!-- Card image -->
+      <div class="view view-cascade overlay">
+        <img src="{{ item.imageURL }}" class="card-img-top"
+             alt="sample photo">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <!-- Card image -->
+      <!-- Card content -->
+      <div class="card-body card-body-cascade text-center">
+        <!-- Category & Title -->
+        <a href="#" class="text-muted">
+          <h5>{{ item.sourceCategory }}</h5>
+        </a>
+        <h4 class="card-title">
+          <strong>
+            <a href="#">{{ item.name }}</a>
+          </strong>
+        </h4>
+        <!-- Description -->
+        <p class="card-text">{{ item.title }}</p>
+        <!-- Card footer -->
+        <div class="card-footer mt-4" style="padding-bottom: 31px">
+            <span class="float-left font-weight-bold">
+              <strong>{{ item.price }}</strong>
+            </span>
+          <span class="float-right">
+              <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
+                <i class="fas fa-eye grey-text ml-3"></i>
+              </a>
+              <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                <i class="fas fa-heart grey-text ml-3"></i>
+              </a>
+            </span>
+        </div>
+      </div>
+      <!-- Card content -->
+    </div>
+    <!-- Card -->
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!--Section: Products v.2-->
