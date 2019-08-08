@@ -13,6 +13,10 @@ import {Observable} from 'rxjs';
 export class ItemDisplayComponent implements OnInit {
   private item$: Observable<Item>;
   item: Item;
+  isPanel1Hidden = false;
+  isPanel2Hidden = true;
+  isPanel3Hidden = true;
+  date: Date;
 
   constructor(
     private route: ActivatedRoute,

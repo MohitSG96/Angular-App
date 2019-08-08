@@ -6,7 +6,7 @@ export class Item {
   sourceCategory: string;
   createdAt: Date;
   reviewCount: number;
-  topScores: {};
+  topScores: { topic: string, score: number }[];
   latestReviewDate: Date;
   domain: string;
   imageURL: string;

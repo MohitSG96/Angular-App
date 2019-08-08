@@ -5,7 +5,7 @@ import { ItemsRoutingModule } from './items-routing.module';
 import { ItemDisplayComponent } from './item-display/item-display.component';
 import {FormsModule} from '@angular/forms';
 import { ItemListComponent } from './item-list/item-list.component';
-import {WavesModule} from 'angular-bootstrap-md';
+import {BadgeModule, BreadcrumbModule, IconsModule, WavesModule, ChartsModule} from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [ItemDisplayComponent, ItemListComponent, ItemListComponent],
@@ -13,7 +13,12 @@ import {WavesModule} from 'angular-bootstrap-md';
     CommonModule,
     FormsModule,
     ItemsRoutingModule,
-    WavesModule
+    WavesModule,
+    BreadcrumbModule,
+    BadgeModule,
+    IconsModule,
+    ChartsModule
   ]
 })
+
 export class ItemsModule { }

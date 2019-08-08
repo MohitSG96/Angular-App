@@ -1,0 +1,79 @@
+.pointerCursor{
+  cursor: pointer;
+}
+
+.item .label-item {
+  text-align:center;
+  width: 100%;
+}
+
+svg {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.circle_animation {
+  stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 440;
+}
+
+.html .circle_animation {
+  -webkit-animation: html 1s ease-out forwards;
+  animation: html 1s ease-out forwards;
+}
+
+@-webkit-keyframes html {
+  to {
+    stroke-dashoffset: 80; /* 50% would be 220 (half the initial value specified above) */
+  }
+}
+
+@keyframes html {
+  to {
+    stroke-dashoffset: 80;
+  }
+}
+
+.hr{
+  width: 100%;
+}
+
+.crumb{
+  margin-top: 15px;
+}
+div{
+  .panel{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 0 rgba(0,0,0,0.5);
+    overflow: hidden;
+  }
+  .panel-heading{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .panel-title{
+    font-family: sans-serif;
+    color: white;
+    font-size: medium;
+  }
+  .panel-primary{
+    background-color: #337ab7;
+
+  }
+  .panel-body{
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-size: medium;
+  }
+}
